@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- City Names-->
+    <string-array name="citiesNames">
+
+        <item>Sialkot</item>
+        <item>Lahore</item>
+    </string-array>
+    <!-- Bllod Groups-->
+    <string-array name="blooggroup">
+
+        <item>O-</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>AB+</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11703f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#050505</color>
+    <color name="statusbar">#11703f</color>
+    <color name="appBackGround">#d9d8df</color>
+    <color name="cardColor">#67c192</color>
+    <color name="textColor">#fdfcfd</color>
+    <color name="blck">#fdfcfd</color>
+    <color name="inputtextcolor">#67c192</color>
+    <color name="progressbaseColor">#67c192</color>
+</resources>

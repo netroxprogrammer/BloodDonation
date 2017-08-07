@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "885388842184",
+    "firebase_url": "https://blooddonation-3f01e.firebaseio.com",
+    "project_id": "blooddonation-3f01e",
+    "storage_bucket": "blooddonation-3f01e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885388842184:android:0b2fa42b5aa0bd68",
+        "android_client_info": {
+          "package_name": "netroxtech.com.bloddonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885388842184-tss315jtumfcpuc5uph9tat1o5d38sst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUjXtMqmV-mKDzdP2q_AhFIBd7uOr4VH0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

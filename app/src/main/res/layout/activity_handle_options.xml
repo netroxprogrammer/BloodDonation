@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="netroxtech.com.bloddonation.Activities.HandleOptions">
+
+<RelativeLayout
+    android:id="@+id/activity_handle_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackGround"
+ >
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Blood Donation"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/LogoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_i"
+        />
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/needBloodLayout"
+        android:layout_below="@+id/LogoImage"
+        android:layout_width="wrap_content">
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need Blood"
+                android:textColor="@color/textColor"
+                android:background="@drawable/new_button_shap"
+                android:layout_gravity="center"
+                android:onClick="postBloodButton"
+                />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ViewPostLayout"
+        android:layout_below="@+id/needBloodLayout"
+        android:layout_width="wrap_content">
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Posts"
+                android:onClick="ViewBloodPosts"
+                android:textColor="@color/textColor"
+                android:background="@drawable/new_button_shap"
+                android:layout_gravity="center"
+                />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+</layout>

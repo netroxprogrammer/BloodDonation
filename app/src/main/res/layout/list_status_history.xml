@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/appBackGround">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/cardColor"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout">
+
+
+                </RelativeLayout>
+
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/logo_i"
+                    android:id="@id/LogoImage"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/relativeLayout"
+                    android:layout_toEndOf="@+id/relativeLayout" />
+
+                <TextView
+
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:text="I  neeed this this this this"
+                    android:textSize="20dp"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginStart="17dp"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/bloodList_history_title"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_toRightOf="@+id/LogoImage"
+                    android:layout_toEndOf="@+id/LogoImage"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address_message"
+                    android:text="address"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/bloodList_history_title"
+                    android:layout_alignStart="@+id/bloodList_history_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_date"
+                    android:text="address"
+                    android:layout_alignLeft="@+id/bloodList_history_title"
+                    android:layout_alignStart="@+id/bloodList_history_title"
+                    android:layout_below="@+id/address_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_status_bGroup"
+                    android:text="address"
+                    android:layout_below="@+id/list_date"
+                    android:layout_alignLeft="@+id/list_date"
+                    android:layout_alignStart="@+id/list_date" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city_history"
+                    android:text="address"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/list_status_bGroup"
+                    android:layout_alignStart="@+id/list_status_bGroup" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

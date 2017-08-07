@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="netroxtech.com.bloddonation.Activities.Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/profile_layout"
+            android:background="@color/progressbaseColor"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profille"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/profile_image" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdullah Masood"
+                android:textSize="25dp"
+                android:id="@+id/userName_profile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/profile_layout"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:defaultFocusHighlightEnabled="true"
+                android:onClick="changeNumberButton"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:id="@+id/mobile_number_card"
+                android:layout_height="wrap_content"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/home"
+                        android:id="@+id/home_image"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/home_image"
+                        android:layout_toRightOf="@+id/home_image"
+                        android:text="03042151706"
+                        android:id="@+id/mobile_numbe_profile"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:textSize="10dp"
+                        android:layout_toEndOf="@+id/home_image"
+                        android:layout_toRightOf="@+id/home_image"
+                        android:layout_below="@+id/mobile_numbe_profile"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/mobile_number_card"
+                android:id="@+id/email_card"
+                android:onClick="changeEmailButton"
+                android:layout_height="wrap_content"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/email"
+                        android:id="@+id/email_image"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/email_image"
+                        android:layout_toRightOf="@+id/email_image"
+                        android:text="Abdullah@gmail.com"
+                        android:id="@+id/email_profile"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="10dp"
+                        android:layout_toEndOf="@+id/email_image"
+                        android:layout_toRightOf="@+id/email_image"
+                        android:layout_below="@+id/email_profile"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/email_card"
+                android:id="@+id/city_card"
+                android:onClick="changeCityButton"
+                android:layout_height="wrap_content"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/city"
+                        android:id="@+id/city_image"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/city_image"
+                        android:layout_toRightOf="@+id/city_image"
+                        android:text="Sialkot"
+                        android:id="@+id/city_profile"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:textSize="10dp"
+                        android:layout_toEndOf="@+id/city_image"
+                        android:layout_toRightOf="@+id/city_image"
+                        android:layout_below="@+id/city_profile"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/city_card"
+                android:id="@+id/bloodg_card"
+                android:onClick="changeBGButton"
+                android:layout_height="wrap_content"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo_i"
+                        android:id="@+id/bg_image"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/bg_image"
+                        android:layout_toRightOf="@+id/bg_image"
+                        android:text="-O"
+                        android:id="@+id/bg_profile"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Group"
+                        android:textSize="10dp"
+                        android:layout_toEndOf="@+id/bg_image"
+                        android:layout_toRightOf="@+id/bg_image"
+                        android:layout_below="@+id/bg_profile"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
